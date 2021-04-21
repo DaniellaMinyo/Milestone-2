@@ -158,3 +158,65 @@ video {
   box-shadow: 0 0 5px #2bd2ff, 0 0 15px #2bd2ff, 0 0 30px #2bd2ff,
     0 0 60px #2bd2ff;
 }
+
+/*=====================Start Media Queries================*/
+
+@media screen and (max-width: 1199px) {
+  .video-content h1 {
+    font-size: 5rem;
+  }
+  .video-content h2 {
+    font-size: 4rem;
+    font-weight: normal;
+    padding-top: 40px;
+  }
+  .video-content {
+    top: 35%;
+    left: 51%;
+  }
+  .btn-container .btn {
+    width: 300px;
+    height: 100px;
+    margin-top: 80px;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .video-content h1 {
+    font-size: 5rem;
+  }
+  .video-content h2 {
+    font-size: 4rem;
+    font-weight: normal;
+    padding-top: 30px;
+  }
+  .video-content {
+    top: 40%;
+    left: 51%;
+  }
+  .btn-container .btn {
+    width: 300px;
+    height: 100px;
+    margin-top: 50px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .video-content h1 {
+    font-size: 3rem;
+  }
+  .video-content h2 {
+    font-size: 2rem;
+    font-weight: normal;
+    padding-top: 30px;
+  }
+  .video-content {
+    top: 40%;
+    left: 51%;
+  }
+  .btn-container .btn {
+    width: 250px;
+    height: 80px;
+    margin-top: 50px;
+  }
+}
