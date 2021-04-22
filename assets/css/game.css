@@ -82,6 +82,22 @@ video {
 .back {
   transform: rotateY(180deg);
 }
+
+#board {
+  height: 35px;
+  width: 450px;
+  border: 4px solid #fff;
+  margin: auto;
+  text-align: center;
+  margin-top: 15px;
+  color: #fff;
+  justify-content: space-evenly;
+}
+
+#board span {
+  padding-top: 10px;
+}
+
 img {
   width: 100%;
   height: 100%;
