@@ -236,6 +236,33 @@
         </div>
     </div>
 
+    <!--Start Game Won Modal-->
+    <!-- Modal https://getbootstrap.com/docs/4.6/components/modal/-->
+    <div class="modal fade" id="gameWonModal" tabindex="-1" aria-labelledby="gameWonModal" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl">
+            <div class="modal-content main-container-menu">
+                <div class="modal-header d-block">
+                    <h5 id="gameWonText" class="modal-title text-center"></h5>
+                </div>
+                <div class="modal-body d-block">
+                    <!--Button for Exit and Play again-->
+                    <div>
+                        <button type="button" class="exit-btn" data-dismiss="modal" aria-label="exit"
+                            onclick="window.location.href='index.html';">Exit
+                        </button>
+                    </div>
+    
+                    <div>
+                        <button type="button" class="play-again-btn"
+                            onclick="window.location.href=window.location.href;">Play Again
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--End Game Won Modal-->
+
     <!--Scripts-->
     <!--Bootstrap-->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
