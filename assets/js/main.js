@@ -54,6 +54,15 @@ function matched() {
     flips++ //icrement 
     document.querySelector("#flips").innerHTML = flips//update
 
+    if(flips ===10) {
+        flip = 10;
+        checkGameWon();
+    }
+}
+
+function checkGameWon() {
+    $("#gameWonText").text("You won in " + sec + "seconds!");
+    $("#gameWonModal").modal("toggle");
 }
 
 function unmatched(x,y) {
@@ -77,6 +86,9 @@ function time() {
         document.querySelector("#timer").innerHTML = secs + "s";
         sec = `${secs}`;
 
+        if(flip===10){
+            clearInterval(ID);
+    }
     }, 1000);
 }
 
@@ -112,5 +124,33 @@ function shuffle() {
 
     for (let i = 0; i<images.length; i++) {
         images[i].src = srcs[i]
+    }
+
+
+// add alts to images
+   for (i=1; i < 21; i++) {
+        let j = 0;
+        if (i<= 9){
+            j = "0" + i.toString()
+        }
+        if (i === 10){
+            j = i;
+        }
+        if (i > 10 && i < 20) {
+            j = "0" +(i - 10).toString();
+        }
+        if (i===20) {
+            j = i - 10;
+        }    
+        jQuery(document).ready(function(){
+            let imgs = "assets/images/card"+j+".jpg";
+            jQuery("img").each(function() {
+                if(jQuery(this).attr("src") == imgs)
+                {
+                    jQuery(this).attr("alt", "Card"+j);
+                }
+            });
+
+        });
     }
 }        
