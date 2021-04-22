@@ -130,3 +130,71 @@ img {
   transition: 1s;
   transform-style: preserve-3d;
 }
+
+@media screen and (min-width: 992px) and (max-width: 1023px) {
+  .card-outer {
+    height: 140px;
+    width: 120px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .card-outer {
+    height: 140px;
+    width: 120px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+  }
+  .container {
+    margin-top: 10px;
+  }
+  .inner-container {
+    margin-top: 10px;
+  }
+  .video-content {
+    top: 40%;
+  }
+}
+
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  .card-outer {
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 5px;
+    height: 140px;
+    width: 120px;
+  }
+  .container {
+    margin-top: 10px;
+  }
+  .inner-container {
+    margin-top: 20px;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .card-outer {
+    height: 100px;
+    width: 80px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 5px;
+  }
+  .container {
+    margin-top: 10px;
+    width: 360px;
+    height: 100vh;
+  }
+  .inner-container {
+    margin-top: 20px;
+    justify-content: center;
+  }
+  #board {
+    width: 200px;
+  }
+}
