@@ -1,4 +1,4 @@
-// Main idea came from codeTonight and modified for the projects needs
+// Main idea came from https://www.youtube.com/watch?v=QrTCHHhoUQU and  was modified for the projects needs
 let cards = document.querySelectorAll(".card-inner");
 let firstClick = false;
 let counter = 0;
@@ -54,12 +54,12 @@ function matched() {
     flips++ //icrement 
     document.querySelector("#flips").innerHTML = flips//update
 
-    if(flips ===10) {
+    if(flips ===10) { //call function if all pair are found
         flip = 10;
         checkGameWon();
     }
 }
-
+//
 function checkGameWon() {
     $("#gameWonText").text("You won in " + sec + "seconds!");
     $("#gameWonModal").modal("toggle");
@@ -77,7 +77,7 @@ function unmatched(x,y) {
 }
 
 function time() {
-    //initalized some variables
+    //initalized a variable
     let secs = 0;
     //update the time every one second
     ID = setInterval(() => {
@@ -85,15 +85,17 @@ function time() {
         //display time
         document.querySelector("#timer").innerHTML = secs + "s";
         sec = `${secs}`;
-
+        //stop timer when all the pairs are found
         if(flip===10){
             clearInterval(ID);
     }
     }, 1000);
 }
 
+//shuffle the cards
 function shuffle() {
     let images = document.querySelectorAll("img");
+    //array of images
     let srcs = ['assets/images/card01.jpg',
                 'assets/images/card02.jpg',
                 'assets/images/card03.jpg',
@@ -121,13 +123,12 @@ function shuffle() {
         srcs[i] = srcs[j]
         srcs[j] = temp
     }
-
+    //add images to document
     for (let i = 0; i<images.length; i++) {
         images[i].src = srcs[i]
     }
 
-
-// add alts to images
+    // add alts to images
    for (i=1; i < 21; i++) {
         let j = 0;
         if (i<= 9){
@@ -141,7 +142,8 @@ function shuffle() {
         }
         if (i===20) {
             j = i - 10;
-        }    
+        }
+        // code from stackoverflow    
         jQuery(document).ready(function(){
             let imgs = "assets/images/card"+j+".jpg";
             jQuery("img").each(function() {
