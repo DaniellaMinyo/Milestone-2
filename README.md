@@ -59,3 +59,73 @@ The wireframes were made using [Balsamiq](https://balsamiq.com/).
 - [Js](https://en.wikipedia.org/wiki/JavaScript) - was used to add functionality.
 - [Bootstrap](https://getbootstrap.com/) - was used to create the layout for the site.
 - [Google Fonts](https://fonts.google.com/) - was used to provide the fonts for the site.
+
+## 4. Testing
+
+### Code Validators
+
+#### [HTML validator](https://validator.w3.org/)
+
+**Game html**
+<img src="assets/images/game-html-errors.png" alt="error message">
+Two errors occured for the game html page.
+
+The first was solved by taking out the spaces in the name of the mp4 file.
+
+The second error was a bad value error that occured 20 times in the game html. I had to change the code in both the game html and the main js a bit. In the game html I had to give values to the scr and alt (instead of adding it later in js) for each card and in the main js I had to change the shuffle function so that it only shuffled the already given images instead of shuffling the images then assigning them to the img tags.
+
+**Index html**
+
+No warnings or errors occured.
+
+#### [CSS validator](https://jigsaw.w3.org/css-validator/)
+
+**Style css and game css**
+
+<img src="assets/images/style-css-error.png" alt="error">
+
+The same error popped up in both the style and the game css.
+Solved the issue by deleting the property.
+
+#### [JS validator](https://jshint.com/)
+
+**Main js**
+
+<img src="assets/images/main-js-errors.png" alt="warnings">
+Added missing semicolons.
+
+### Responsiveness
+
+- Galaxy S5 - Good
+- iPhone 5/6/7/8 - Good
+- iPad - Good
+- iPad Pro - Good
+- Desktop 1024px - Good
+- Desktop >1200px - Good
+
+### Browser compatibility
+
+- Chrome: Responsiveness, Appearance and Functionality- Good
+- Ecosia: Responsiveness and Appearance and Functionality - Good
+- Safari: Responsiveness and Appearance and Functionality- The appearance and responsiveness is good but it does not function properly.
+
+### Testing user stories
+
+- As a user of the site, I'd like to easily use the game.
+- As a user I want the game to include fun and interactive features.
+- As a user I want the game to be well presented and visually appealing.
+  <img src="assets/images/game1.png" alt="start">
+
+  <img src="assets/images/game2.png" alt="game">
+
+- As a user I want to know how long it took me to complete the game.
+
+  <img src="assets/images/win-time.png" alt="time">
+
+- As a user I want to easily play the game again.
+
+  <img src="assets/images/play-again.png" alt="play-again">
+
+### Bugs
+
+When browsing the site on Safari and IOS - while the appearance and responsiveness is as expected, the functionality does not work properly. When one card is clicked the card flips but then immediately flips back. If two cards are clicked both first flip and flip back, then those two cards plus another random one flips for a second before fliping back. The cards that are matched remain face down.
