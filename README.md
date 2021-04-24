@@ -48,3 +48,14 @@ The wireframes were made using [Balsamiq](https://balsamiq.com/).
 
 - Easy and Hard difficulty levels for the game.
 - Adding sound to the cards when they are flipped, and an option to turn off sound.
+
+## 3. Technologies used
+
+- [GitHub](https://github.com/) - was used to host the project.
+- [Vscode](https://code.visualstudio.com/) - was used to develop the website.
+- [Balsamiq](https://balsamiq.com/) - was used to create the project's wireframes.
+- [HTML5](https://en.wikipedia.org/wiki/HTML5) - provides the structure and content for the site.
+- [CSS3](https://en.wikipedia.org/wiki/Cascading_Style_Sheets) - provides the styling for the site.
+- [Js](https://en.wikipedia.org/wiki/JavaScript) - was used to add functionality.
+- [Bootstrap](https://getbootstrap.com/) - was used to create the layout for the site.
+- [Google Fonts](https://fonts.google.com/) - was used to provide the fonts for the site.
