@@ -129,3 +129,23 @@ Added missing semicolons.
 ### Bugs
 
 When browsing the site on Safari and IOS - while the appearance and responsiveness is as expected, the functionality does not work properly. When one card is clicked the card flips but then immediately flips back. If two cards are clicked both first flip and flip back, then those two cards plus another random one flips for a second before fliping back. The cards that are matched remain face down.
+
+## 5. Deployment
+
+Deploying the project
+
+- Select settings on the menu at the top of repository.
+- Find the Githup pages section.
+- Click on the menu under Source and the select master branch then click save.
+- The website is now deployed.
+- The link to the site can be found in settings in the Github pages section.
+
+Running the project locally
+
+- First you must clone this project.
+- Under the menu click on the Code dropdown menu.
+- In the https section, copy the url.
+- In your local terminal open Git Bash.
+- Change your working directory to the one where you want to clone the directory.
+- Type in git clone and then paste in the url you copied.
+- Then just press enter.
