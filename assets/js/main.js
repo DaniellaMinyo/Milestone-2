@@ -16,44 +16,45 @@ shuffle();
 for (let  i = 0; i < cards.length; i++) {
     cards[i].addEventListener("click", () => {
         //if first click is false
-        if (!firstClick){time()}//call time function
+        if (!firstClick) {
+        time();//call time function
         firstClick = true; //time function called only ones
-        
+        }
         if (cards[i].state == "unclicked") { //if the state is unclicked rotate the clicked card
             cards[i].style.transform = "rotateY(180deg)";
             cards[i].state = "clicked";
             counter++; //increment counter value
-            cardPair.push(cards[i])
-            check()//check same src property
+            cardPair.push(cards[i]);
+            check();//check same src property
         }
 
         else if (cards[i].state == "clicked") {
-            cards[i].style.transform = "rotate(0deg)"
-            cards[i].state = "unclicked"
-            counter--
-            cardPair = []
+            cards[i].style.transform = "rotate(0deg)";
+            cards[i].state = "unclicked";
+            counter--;
+            cardPair = [];
         }
-    })
+    });
 }
 
 function check() {
     if (counter == 2) { //value of counter must be two
         if (cardPair[0].querySelector("img").src == cardPair[1].querySelector("img").src) {
-            matched()
+            matched();
         } else {
-            unmatched(cardPair[0], cardPair[1])
+            unmatched(cardPair[0], cardPair[1]);
         }
     }
 }
 
 function matched() {
-    cardPair[0].state = "blocked"
-    cardPair[1].state = "blocked"
-    counter = 0 //counter update
-    cardPair = []
-    let flips = document.querySelector("#flips").innerHTML //get value of prev flips 
-    flips++ //icrement 
-    document.querySelector("#flips").innerHTML = flips//update
+    cardPair[0].state = "blocked";
+    cardPair[1].state = "blocked";
+    counter = 0; //counter update
+    cardPair = [];
+    let flips = document.querySelector("#flips").innerHTML; //get value of prev flips 
+    flips++; //icrement 
+    document.querySelector("#flips").innerHTML = flips;//update
 
     if(flips ===10) { //call function if all pair are found
         flip = 10;
@@ -68,13 +69,13 @@ function checkGameWon() {
 
 function unmatched(x,y) {
     setTimeout(() => {
-        x.style.transform = "rotateY(0deg)"
-        y.style.transform = "rotateY(0deg)"
+        x.style.transform = "rotateY(0deg)";
+        y.style.transform = "rotateY(0deg)";
     }, 750);
-    cardPair[0].state = "unclicked" //update to uncliked - hide image again
-    cardPair[1].state = "unclicked" //update to uncliked - hide image again
-    counter = 0
-    cardPair = []
+    cardPair[0].state = "unclicked"; //update to uncliked - hide image again
+    cardPair[1].state = "unclicked"; //update to uncliked - hide image again
+    counter = 0;
+    cardPair = [];
 }
 
 function time() {
@@ -82,7 +83,7 @@ function time() {
     let secs = 0;
     //update the time every one second
     let ID = setInterval(() => {
-        secs++
+        secs++;
         //display time
         document.querySelector("#timer").innerHTML = secs + "s";
         sec = `${secs}`;
@@ -97,5 +98,5 @@ function shuffle() {
     card.forEach(cards => {
         let randomPosition = Math.floor(Math.random() * 30);
         cards.style.order = randomPosition;
-    })
+    });
 }
