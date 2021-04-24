@@ -149,3 +149,24 @@ Running the project locally
 - Change your working directory to the one where you want to clone the directory.
 - Type in git clone and then paste in the url you copied.
 - Then just press enter.
+
+## 6. Credits
+
+### 6.1. Content
+
+- I got the main idea from [codeTonight](https://www.youtube.com/watch?v=QrTCHHhoUQU) to which I made modifications according to the project's needs.
+- I took a lot of inspiration from https://www.w3schools.com/
+- For the readme file I took a lot of inspiration from https://github.com/fernandagil/ms1-nonnapepita-restaurant/blob/master/README.md
+- JS code for the Animation on Scroll was originally taken from [Julian Lloyd](https://github.com/jlmakes/scrollreveal) and modified for the project's needs.
+- The code for the glossy buttons are taken from [Online Tutorials](https://www.youtube.com/watch?v=YrOq7OpRV8I)
+
+### 6.2. Media
+
+- The video backgrounds I used are from [Pixabay](https://pixabay.com/)
+- The pictures I used are from [Unsplash](https://unsplash.com/)
+- The card images are taken from [Trekmovie](https://trekmovie.com), [Indiewire](https://indiewire.com), [Paramountplus](https://paramountplus.com), [Digitalspy](https://digitalspy.com), [Amazon](https://amazon.com), [Memory-alpha](https://memory-alpha.fandom.com),[Startrek](https://startrek.com), [Syfywire](https://syfy.com),
+- The favicion is taken from [Cleanpng](https://cleanpng.com)
+
+### 6.3. Acknowledgements
+
+My mentor [Precious Ijege](https://www.linkedin.com/in/precious-ijege-908a00168/?originalSubdomain=ng) for the support.
