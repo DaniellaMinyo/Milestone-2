@@ -28,3 +28,23 @@ Like most memory games, the user can click on two cards that will flip. If the i
 The wireframes were made using [Balsamiq](https://balsamiq.com/).
 
 [Wireframes](https://github.com/DaniellaMinyo/Milestone-2/blob/main/Wireframes.pdf)
+
+## 2. Features
+
+### 2.1. Existing features
+
+1.  The index page
+
+- with a start button that takes the user to the game.
+
+2.  The game page.
+
+- After all the pairs are matched a pop-up window appears.
+- It tells you how many seconds it took for you to complete the game and gives you the options to either exit or play again.
+- If you click on exit the game takes you back to the index page.
+- If you click play again, the game is reloaded.
+
+### 2.2. Features to implement
+
+- Easy and Hard difficulty levels for the game.
+- Adding sound to the cards when they are flipped, and an option to turn off sound.
